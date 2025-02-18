@@ -37,10 +37,16 @@ module.exports = {
         // },
 
         // For hosts (please adjust)
-        remotes: {
-            "childAppA": "childAppA@http://localhost:4300/remoteEntry.js",
-            "childAppB": "childAppB@http://localhost:4400/remoteChildEntry.js",
+        // "childAppA": "childAppA@http://concierge-document-upload.s3-website.ap-south-1.amazonaws.com/child-app-a/remoteEntry.js",
+        // "childAppB": "childAppB@http://concierge-document-upload.s3-website.ap-south-1.amazonaws.com/child-app-b/remoteChildEntry.js",
 
+        // "childAppA": "childAppA@http://localhost:4300/remoteEntry.js",
+        // "childAppB": "childAppB@http://localhost:4400/remoteChildEntry.js",        
+        remotes: {
+        "childAppA": "childAppA@http://concierge-document-upload.s3-website.ap-south-1.amazonaws.com/child-app-a/remoteEntry.js",
+        "childAppB": "childAppB@http://concierge-document-upload.s3-website.ap-south-1.amazonaws.com/child-app-b/remoteChildEntry.js",
+        // "childAppA": "childAppA@http://localhost:4300/remoteEntry.js",
+        // "childAppB": "childAppB@http://localhost:4400/remoteChildEntry.js", 
         },
 
         shared: share({
